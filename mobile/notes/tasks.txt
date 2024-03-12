@@ -1,0 +1,72 @@
+@Chulls
+ - accessibility tags kya hai 
+ - aaraam se act karna seekhna padega warna time energy aur sanity waste hogi
+
+
+
+@points
+- kucch decisions baad ke liye bhi chhod sakte hai, knowlingly easy version implement karke wo cheeze baad me implement karna
+- touchable without feedback returning its children as they are
+- thoda realize karte hai ki kya cheeze work nahi kar rhi thi
+- toda aaraam aaraam se karna padega!!!!!! ek ek task and why ot feel hastey ??
+
+
+@ideas
+- forced scaled sheet bana lo na bhai alag hi bakchodi hai bc
+- book by the name of loading,
+
+
+
+@Tasks in general
+    - Axios setup
+    - reducer setup
+    - saga setup ( or not to setup saga? and redux )
+    - 
+
+
+
+
+@LongTermTasks
+- profile me recently visited ki list ( persistent reducer )
+- search me icon as placeholder ya permanent, behaviour on search click, and pressable inclusion
+- book image ko badhiya se dikha skate hai multiple cases ke liye, depending how the image loads
+- author/ title name overflow for the book carousel
+- multiple authors handling
+
+
+@MediumTermTasks
+
+
+
+
+@ShortTermTasks
+- folder structure
+- home screen
+- weird search component bug can't solve rn
+-  default image for list loading time
+
+
+
+
+@Tasks RN
+- rn size matters ko configure karna 
+- chull sheet initiate
+- top bar style done
+- svgs
+- plugin for beautification
+- outer skeleton for components
+- usko mail karna hai
+-  lvl 1 skeleton for text components
+- localization File
+- search bar component
+    - dynamic imports and loading for and against is disabled
+-email karna hai 
+
+
+@Tasks RN
+- dummy data for render item X
+- ui 
+image props dekhne padenge 
+- url creator ka funciton bana rha hu
+
+

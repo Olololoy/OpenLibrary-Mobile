@@ -1,0 +1,6 @@
+- state up the render tree ( VDOM ) or down !!?? ( down results in less rerenders and diffing , but maybe more states and listeners ?? LongLists vs Small Lists ) ( actual me kitna fark padta hai , coz ek hi baar re render hoga toh sirf aur sirf ek baar agar frame drop ho bhi gye toh kya hi fark padta hai !!??)
+    but kisi reason se baar baar ho rha hai toh alag baat hai
+
+-  carousel with title vs custom prop for title or no title
+
+- && vs ? for conditional rendering

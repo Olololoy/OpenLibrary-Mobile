@@ -1,0 +1,361 @@
+const jsObj = JSON.parse({
+    "works": [
+      {
+        "author_key": [
+          "OL1573400A"
+        ],
+        "author_name": [
+          "Eric Robertson - undifferentiated"
+        ],
+        "cover_edition_key": "OL33899062M",
+        "cover_i": 12009823,
+        "edition_count": 2,
+        "first_publish_year": 2018,
+        "has_fulltext": false,
+        "key": "/works/OL25312237W",
+        "language": [
+          "eng"
+        ],
+        "public_scan_b": false,
+        "title": "Control Your Mind and Master Your Feelings"
+      },
+      {
+        "key": "/works/OL25746382W",
+        "title": "Resilient Destinations and Tourism",
+        "edition_count": 6,
+        "first_publish_year": 2018,
+        "has_fulltext": false,
+        "public_scan_b": false,
+        "cover_edition_key": "OL34642287M",
+        "cover_i": 13713554,
+        "language": [
+          "eng"
+        ],
+        "author_key": [
+          "OL8141094A",
+          "OL9732878A"
+        ],
+        "author_name": [
+          "Jarkko Saarinen",
+          "Alison M. Gill"
+        ]
+      },
+      {
+        "key": "/works/OL27297392W",
+        "title": "Sita",
+        "edition_count": 2,
+        "first_publish_year": 2017,
+        "has_fulltext": false,
+        "public_scan_b": false,
+        "cover_edition_key": "OL40123524M",
+        "cover_i": 13215448,
+        "language": [
+          "eng"
+        ],
+        "author_key": [
+          "OL6976840A"
+        ],
+        "author_name": [
+          "Amish Tripathi"
+        ]
+      },
+      {
+        "key": "/works/OL21367871W",
+        "title": "Grasp",
+        "edition_count": 4,
+        "first_publish_year": 2020,
+        "has_fulltext": false,
+        "public_scan_b": false,
+        "cover_edition_key": "OL28943602M",
+        "cover_i": 10362672,
+        "language": [
+          "eng"
+        ],
+        "author_key": [
+          "OL7648809A",
+          "OL8186745A"
+        ],
+        "author_name": [
+          "Sanjay Sarma",
+          "Luke Yoquinto"
+        ]
+      },
+      {
+        "key": "/works/OL21285497W",
+        "title": "Teenage Mutant Ninja Turtles Scratch-and-Sniff Book (Teenage Mutant Ninja Turtles)",
+        "edition_count": 1,
+        "first_publish_year": 2017,
+        "has_fulltext": true,
+        "public_scan_b": false,
+        "ia": [
+          "smellofvictory0000berr"
+        ],
+        "ia_collection_s": "inlibrary;internetarchivebooks;printdisabled",
+        "lending_edition_s": "OL28818895M",
+        "lending_identifier_s": "smellofvictory0000berr",
+        "cover_edition_key": "OL28818895M",
+        "cover_i": 14518680,
+        "language": [
+          "eng"
+        ],
+        "author_key": [
+          "OL2633520A",
+          "OL3932323A"
+        ],
+        "author_name": [
+          "Random House",
+          "Patrick Spaziante"
+        ],
+        "availability": {
+          "status": "borrow_available",
+          "available_to_browse": true,
+          "available_to_borrow": false,
+          "available_to_waitlist": false,
+          "is_printdisabled": true,
+          "is_readable": false,
+          "is_lendable": true,
+          "is_previewable": true,
+          "identifier": "smellofvictory0000berr",
+          "isbn": "9780399553752",
+          "oclc": null,
+          "openlibrary_work": "OL21285497W",
+          "openlibrary_edition": "OL28818895M",
+          "last_loan_date": null,
+          "num_waitlist": null,
+          "last_waitlist_date": null,
+          "is_restricted": true,
+          "is_browseable": true,
+          "__src__": "core.models.lending.get_availability"
+        }
+      },
+      {
+        "key": "/works/OL1814471W",
+        "title": "Day of Tears",
+        "subtitle": "A Novel in Dialogue",
+        "edition_count": 6,
+        "first_publish_year": 2005,
+        "has_fulltext": true,
+        "public_scan_b": false,
+        "ia": [
+          "dayoftearsnoveli00lest",
+          "dayoftears00juli"
+        ],
+        "ia_collection_s": "barryuniversity-ol;binghamton-ol;bostonuniversitylibraries-ol;bpljordan-ol;china;cnusd-ol;cua-ol;dartmouthlibrary-ol;delawarecountydistrictlibrary-ol;denverpubliclibrary-ol;framingham-ol;gwulibraries-ol;inlibrary;internetarchivebooks;ithacacollege-ol;library_of_atlantis;marymount-ol;openlibrary-d-ol;printdisabled;smithsonianlibraries;stmaryscountylibrary;udc-ol;uni-ol;universityofarizona-ol;universityofcoloradoboulder-ol;universityofoklahoma-ol;uslprototype",
+        "lending_edition_s": "OL24764115M",
+        "lending_identifier_s": "dayoftearsnoveli00lest",
+        "cover_edition_key": "OL24764115M",
+        "cover_i": 6817955,
+        "language": [
+          "eng"
+        ],
+        "author_key": [
+          "OL4348040A"
+        ],
+        "author_name": [
+          "Julius Lester"
+        ],
+        "availability": {
+          "status": "borrow_available",
+          "available_to_browse": true,
+          "available_to_borrow": true,
+          "available_to_waitlist": false,
+          "is_printdisabled": true,
+          "is_readable": false,
+          "is_lendable": true,
+          "is_previewable": true,
+          "identifier": "dayoftearsnoveli00lest",
+          "isbn": "0786804904",
+          "oclc": null,
+          "openlibrary_work": "OL1814471W",
+          "openlibrary_edition": "OL24764115M",
+          "last_loan_date": "2020-09-07T04:36:46Z",
+          "num_waitlist": "0",
+          "last_waitlist_date": "2020-03-12T01:02:02Z",
+          "is_restricted": true,
+          "is_browseable": true,
+          "__src__": "core.models.lending.get_availability"
+        }
+      },
+      {
+        "key": "/works/OL8605994W",
+        "title": "Access to Math",
+        "edition_count": 30,
+        "first_publish_year": 1808,
+        "has_fulltext": true,
+        "public_scan_b": false,
+        "ia": [
+          "basicstatistics0000unse",
+          "fractions0000unse",
+          "graphinginterpre0000unse"
+        ],
+        "ia_collection_s": "denverpubliclibrary-ol;inlibrary;internetarchivebooks;printdisabled",
+        "lending_edition_s": "OL11492407M",
+        "lending_identifier_s": "basicstatistics0000unse",
+        "cover_edition_key": "OL11492398M",
+        "cover_i": 5140681,
+        "language": [
+          "eng"
+        ],
+        "author_key": [
+          "OL2892529A"
+        ],
+        "author_name": [
+          "Globe Fearon"
+        ],
+        "availability": {
+          "status": "borrow_available",
+          "available_to_browse": true,
+          "available_to_borrow": true,
+          "available_to_waitlist": false,
+          "is_printdisabled": true,
+          "is_readable": false,
+          "is_lendable": true,
+          "is_previewable": true,
+          "identifier": "basicstatistics0000unse",
+          "isbn": "0835915662",
+          "oclc": null,
+          "openlibrary_work": "OL8605994W",
+          "openlibrary_edition": "OL11492407M",
+          "last_loan_date": "2020-06-09T03:38:20Z",
+          "num_waitlist": "0",
+          "last_waitlist_date": "2019-10-20T22:09:52Z",
+          "is_restricted": true,
+          "is_browseable": true,
+          "__src__": "core.models.lending.get_availability"
+        }
+      },
+      {
+        "key": "/works/OL6286653W",
+        "title": "The Moonshiner",
+        "edition_count": 5,
+        "first_publish_year": 1966,
+        "has_fulltext": false,
+        "public_scan_b": false,
+        "cover_edition_key": "OL10682471M",
+        "cover_i": 7334048,
+        "language": [
+          "eng"
+        ],
+        "author_key": [
+          "OL1640017A"
+        ],
+        "author_name": [
+          "Lucy Walker"
+        ]
+      },
+      {
+        "key": "/works/OL6286667W",
+        "title": "The stranger from the North",
+        "edition_count": 6,
+        "first_publish_year": 1959,
+        "has_fulltext": false,
+        "public_scan_b": false,
+        "cover_edition_key": "OL14876164M",
+        "cover_i": 14164613,
+        "language": [
+          "eng"
+        ],
+        "author_key": [
+          "OL1640017A"
+        ],
+        "author_name": [
+          "Lucy Walker"
+        ]
+      },
+      {
+        "key": "/works/OL6286671W",
+        "title": "The Man From Outback",
+        "edition_count": 6,
+        "first_publish_year": 1964,
+        "has_fulltext": false,
+        "public_scan_b": false,
+        "cover_edition_key": "OL19162028M",
+        "cover_i": 13599799,
+        "language": [
+          "eng"
+        ],
+        "author_key": [
+          "OL1640017A"
+        ],
+        "author_name": [
+          "Lucy Walker"
+        ]
+      },
+      {
+        "author_key": [
+          "OL497961A"
+        ],
+        "author_name": [
+          "H. J.-P Morand"
+        ],
+        "cover_edition_key": "OL898955M",
+        "cover_i": 3836116,
+        "edition_count": 1,
+        "first_publish_year": 1995,
+        "has_fulltext": false,
+        "key": "/works/OL3140400W",
+        "language": [
+          "eng"
+        ],
+        "public_scan_b": false,
+        "title": "Fluid structure interaction"
+      },
+      {
+        "key": "/works/OL6286670W",
+        "title": "A man called Masters",
+        "edition_count": 7,
+        "first_publish_year": 1965,
+        "has_fulltext": false,
+        "public_scan_b": false,
+        "cover_edition_key": "OL10682467M",
+        "cover_i": 14070134,
+        "language": [
+          "eng"
+        ],
+        "author_key": [
+          "OL1640017A"
+        ],
+        "author_name": [
+          "Lucy Walker"
+        ]
+      },
+      {
+        "key": "/works/OL9466198W",
+        "title": "Love in a Cloud",
+        "edition_count": 1,
+        "first_publish_year": 1980,
+        "has_fulltext": false,
+        "public_scan_b": false,
+        "language": [
+          "eng"
+        ],
+        "author_key": [
+          "OL1640017A"
+        ],
+        "author_name": [
+          "Lucy Walker"
+        ]
+      },
+      {
+        "key": "/works/OL24393283W",
+        "title": "A Little Black Book",
+        "edition_count": 113,
+        "first_publish_year": 2019,
+        "has_fulltext": false,
+        "public_scan_b": false,
+        "cover_edition_key": "OL32305302M",
+        "cover_i": 10930198,
+        "language": [
+          "eng"
+        ],
+        "author_key": [
+          "OL7845631A"
+        ],
+        "author_name": [
+          "Graeme Jenkinson"
+        ]
+      }
+    ]
+  });
+
+  export {jsObj};
