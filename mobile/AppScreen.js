@@ -1,13 +1,17 @@
 import React from 'react';
-import HomeScreen from './src/modules/home/screens/parentHomeScreen/homeScreen';
-import MainBookPage from './src/modules/details/screens/mainBookPage/mainBookPage';
-import ParentSearchScreen from './src/modules/search/screens/parentSearcScreen/parentSearchScreen';
+import {StatusBar} from 'react-native';
+import MyTabs from './src/rootNavigation/tabNavigator/tabnavigator';
 
 function AppScreen() {
   return (
-    <HomeScreen />
-    // <MainBookPage />
-    // <ParentSearchScreen/>
+    <>
+      <MyTabs />
+      <StatusBar
+      //TODO: DM
+      // barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+      // backgroundColor={backgroundStyle.backgroundColor}
+      />
+    </>
   );
 }
 

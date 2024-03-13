@@ -12,19 +12,24 @@ import {SearchBarComponent} from '../../../../commonComponents';
 import BookCarousel from '../../../../commonComponents/bookCarouselComponent/bookCarousel';
 import axios from 'axios';
 
-export default function HomeScreen() {
+export default function HomeScreen(props) {
   const [trendingData, settrendingData] = useState([]);
   const [categoryOneData, setcategoryOneData] = useState([]);
 
-  const trendingSince = 'now';
+  // const trendingSince = 'now';
+  const trendingSince = 'weekly';
   const trendingLink = `/trending/${trendingSince}`;
 
   useEffect(() => {
     // sample url https://openlibrary.org.json
-    const promise = axios.get(`https://openlibrary.org${trendingLink}.json`);
+    const promise = axios.get(`https://openlibrary.org${trendingLink}.json`, {
+      params: {
+        limit: '8',
+      },
+    });
     promise.then(res => {
       //   console.log(res?.data?.works.slice(0, 1));
-      settrendingData(res?.data?.works.slice(0, 10));
+      settrendingData(res?.data?.works.slice(0, 8));
     });
   }, []);
 
@@ -75,8 +80,12 @@ export default function HomeScreen() {
         </View>
       </TouchableWithoutFeedback>
 
-      <BookCarousel title="Trending" data={trendingData} />
-      <BookCarousel title="Books Related to: Design" data={categoryOneData} />
+      <BookCarousel
+        title="Trending"
+        data={trendingData}
+        navigate={props.navigation.navigate}
+      />
+      {/* <BookCarousel title="Books Related to: Design" data={categoryOneData} /> */}
     </ScrollView>
 
     //scrollView

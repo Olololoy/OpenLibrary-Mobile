@@ -62,11 +62,45 @@
 - search me cover id hai kya 
 - search screen back button
 - medium article ko like karna
+- //add loading text to fabourites screens
+- beautify the loading text later
+- unwatchlist better tareeke se handle karna
+- Unwatchlist ka ek common function 
+- hadnling promise failure cases
+
+@Tasks RN
+- gitignore me daalna hai notes wala folder
+- aur data fetc wala folder bhi
+- renderitemFinalize and copy
+- rainbow indent sahi ka red hi hata dena, coz galat toh kucch hoga hi nahi
+- ye list baad me banaayenge, iska logic setup karna zyaada important hai rather than iski designing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @Tasks RN
 - remember key is work-unique id for uris as well
-
-
+- sort aur filter check karna 
+- usse 2-3 ghante aur maangna ya na maangna
+- only asking for certain keys to getfaster responses
+- could have more edge cases but not thinking rn
+    still edge cases possible !!
+- check gmail
+- adding arrays
 
 
 
