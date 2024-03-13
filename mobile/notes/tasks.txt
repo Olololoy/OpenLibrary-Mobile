@@ -1,6 +1,8 @@
 @Chulls
  - accessibility tags kya hai 
  - aaraam se act karna seekhna padega warna time energy aur sanity waste hogi
+ - check gmail ?
+ -
 
 
 
@@ -9,11 +11,20 @@
 - touchable without feedback returning its children as they are
 - thoda realize karte hai ki kya cheeze work nahi kar rhi thi
 - toda aaraam aaraam se karna padega!!!!!! ek ek task and why ot feel hastey ??
+- elevation se shayad width Height chhoti bhi ho jaati hai, shayad uss container ke andar ya jab wo container khaali ho ??
+- develop karne me thoda better ho sakte hai, kaafi effecienies possible ahi, ig bohot time aise baithne me aur soch idhar udhar jaane me hi waste ho jaata hai, this is not normal / optimal development speed
+- List ko baad me bhi accha bana sakta tha, but abhi aur cheezo pe kaam karna important tha, basic structure bana ke chhod diya hai
+
 
 
 @ideas
 - forced scaled sheet bana lo na bhai alag hi bakchodi hai bc
 - book by the name of loading,
+- animated watchlist component
+- Breaks and checkpoints while working, get up with no tension and take honest no tension Breaks
+- Bc basic frontend structure / skeleton creator kyu nahi exist karta !!!!!
+- freelancing projects me toh pel du mai logo ko agar aisa koi tool mil jaaye toh       
+- caching images througout the app, can use the initial image that the component loaded to the description page
 
 
 
@@ -32,6 +43,9 @@
 - book image ko badhiya se dikha skate hai multiple cases ke liye, depending how the image loads
 - author/ title name overflow for the book carousel
 - multiple authors handling
+- offwhite background Color
+- heavier underlining sectional toggle for book main page description 
+
 
 
 @MediumTermTasks
@@ -44,6 +58,35 @@
 - home screen
 - weird search component bug can't solve rn
 -  default image for list loading time
+- bolder text when the tab is selected with 
+- search me cover id hai kya 
+- search screen back button
+- medium article ko like karna
+
+@Tasks RN
+- remember key is work-unique id for uris as well
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -69,4 +112,31 @@
 image props dekhne padenge 
 - url creator ka funciton bana rha hu
 
+@Tasks RN
+- frame for the middle parts
+- community reviews kaha se mil rhe hai
+- X not changing the sizes X
 
+@Tasks RN
+- can look for some search screens, book list check
+- search api padh sakte hai 
+- abh ike liye search by title hi kar rhe hai ( no options )
+- filter sort later
+- check for sorts and filters online
+- search by ??
+- aur bhi search by options possible hai
+- reviews problem statement ka part tha kya?
+- peeche chair support
+- initial skeleton for the header
+- beautify plugin
+- setup pagination
+- renderitem ka styles
+- check language
+- raising keyboard height
+- nested texts
+- categories nikaal rha hu
+
+//suggestion - rating left me hi rakhe aur bookmark book ke upar even on the main carousel
+//aur saved items me bas remove bookmark ka option de 
+
+    

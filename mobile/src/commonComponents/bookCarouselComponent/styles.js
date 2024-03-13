@@ -39,6 +39,8 @@ const styles = ScaledSheet.create({
 
         },
         titleText: {
+            flex: 1,
+            width: '160@ms',
             marginTop: '15@mvs',
             fontSize: '16@ms',
             fontWeight: '600',
