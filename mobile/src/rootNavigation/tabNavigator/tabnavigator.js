@@ -55,6 +55,7 @@ export default function MyTabs() {
           }
         },
         tabBarStyle: tabBarStyles,
+        tabBarHideOnKeyboard: true,
       })}>
       <Tab.Screen
         name="Home"

@@ -197,7 +197,7 @@ a
 
   const pressBookmark = React.useCallback(
     function () {
-      console.log('LogCheck', 'Z', bookmarkChangeInitiated);
+      // console.log('LogCheck', 'Z', bookmarkChangeInitiated);
 
       if (!bookmarkChangeInitiated) {
         setbookmarkChangeInitiated(true);
@@ -207,7 +207,7 @@ a
           .then(data => {
             if (data) {
               const map = JSON.parse(data);
-              console.log(map);
+              // console.log(map);
               if (!isBookmarked) {
                 map[key] = storageItem;
               } else {

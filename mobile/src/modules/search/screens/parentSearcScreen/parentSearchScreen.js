@@ -71,19 +71,19 @@ export default function ParentSearchScreen(props) {
         },
       });
       resPromise.then(res => {
-        console.log('response received');
-        console.log(res?.data?.q, res?.data?.offset);
+        // console.log('response received');
+        // console.log(res?.data?.q, res?.data?.offset);
         // console.log(
         //   recentAcceptableResponse.q,
         //   recentAcceptableResponse.offset,
         // );
 
-        console.log(
-          recentResponseRef.current.q,
-          recentResponseRef.current.offset,
-        );
-        console.log(res?.data?.q === recentResponseRef.current.q);
-        console.log(res?.data?.offset == recentResponseRef.current.offset);
+        // console.log(
+        //   recentResponseRef.current.q,
+        //   recentResponseRef.current.offset,
+        // );
+        // console.log(res?.data?.q === recentResponseRef.current.q);
+        // console.log(res?.data?.offset == recentResponseRef.current.offset);
 
         // if (
         //   res?.data?.q === recentAcceptableResponse.q &&
@@ -93,8 +93,8 @@ export default function ParentSearchScreen(props) {
           res?.data?.q === recentResponseRef.current.q &&
           res?.data?.offset == recentResponseRef.current.offset
         ) {
-          console.log('reached here');
-          console.log(res?.data);
+          // console.log('reached here');
+          // console.log(res?.data);
           if (res?.data?.docs) {
             if (res?.data?.docs.length == 0) {
               setnoResults(true);

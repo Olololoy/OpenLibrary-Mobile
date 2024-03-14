@@ -34,11 +34,11 @@ export default function FavouritesScreen(props) {
 
   useFocusEffect(
     React.useCallback(() => {
-      console.log('logCheck', 'K');
+      // console.log('logCheck', 'K');
       const storagePromise = AsyncStorage.getItem('fav_Item_Map');
       storagePromise
         .then(data => {
-          console.log('logCheck', 'K1', data);
+          // console.log('logCheck', 'K1', data);
           if (data) {
             return JSON.parse(data);
           }
@@ -52,7 +52,7 @@ export default function FavouritesScreen(props) {
           //effecient kar sakte honge
         })
         .catch(e => {
-          console.log('asyncStorageError_favouritesScreen');
+          // console.log('asyncStorageError_favouritesScreen');
         });
     }, []),
   );

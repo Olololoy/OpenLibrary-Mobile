@@ -36,11 +36,17 @@ const styles = ScaledSheet.create({
       marginBottom: '20@mvs',
       // borderWidth: '100@ms',
       // borderWidth: '1@ms'
-      elevation: 24,
+      elevation: 8,
+      borderRadius: '20@ms',
+      // borderWidth: '20@mvs',
     },
     bookImageStyles: {
-      height: '310@mvs',
-      width: '210@ms',
+      // height: '330@mvs',
+      // width: '210@ms',
+      // height: '300@mvs',
+      // width: '190@ms',
+      height: '315@mvs',
+      width: '205@ms',
       borderRadius: '20@ms',
     },
     titleText: {

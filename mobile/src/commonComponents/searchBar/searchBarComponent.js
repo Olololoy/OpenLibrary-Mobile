@@ -18,10 +18,10 @@ export default function SearchBarComponent(props) {
       }
 
       timer.current = setTimeout(() => {
-        console.log('debounced');
+        // console.log('debounced');
         callback(value);
       }, 1500);
-      console.log('hello');
+      // console.log('hello');
     },
     [callback],
   );
