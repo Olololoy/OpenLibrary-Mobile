@@ -63,9 +63,9 @@ export default function FavouritesScreen(props) {
         style={{
           flex: 1,
           alignItems: 'center',
-          marginTop: 100,
+          marginTop: 130,
         }}>
-        <BookmarkEmptyPageIcon height={mvs(300)} width={mvs(300)} />
+        <BookmarkEmptyPageIcon height={mvs(250)} width={mvs(250)} />
       </View>
     );
   }

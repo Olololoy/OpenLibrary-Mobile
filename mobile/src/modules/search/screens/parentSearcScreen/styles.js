@@ -38,6 +38,7 @@ const styles = ScaledSheet.create({
   flatlistContainer: {
     outerContainer: {
       marginHorizontal: '30@ms',
+      marginBottom: '50@mvs',
     },
     contentContainer: {},
   },

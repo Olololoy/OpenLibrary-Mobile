@@ -57,7 +57,7 @@ const styles = ScaledSheet.create({
         //down arrow icon for search by
         icon: {},
         text: {
-          fontSize: '12@ms',
+          fontSize: '13@ms',
           fontWeight: '400',
           color: '#aaa',
         },

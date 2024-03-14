@@ -335,13 +335,23 @@ export default function ParentSearchScreen(props) {
       <View style={styles.searchWrapperContainer.self}>
         <SearchBarComponent isDisabled={false} callback={fetchQueryData} />
       </View>
-      <Text
+      {/* <Text
         style={{
           alignSelf: 'center',
           marginBottom: mvs(5),
         }}>
         {loadingQueryFetch || loadingPaginationFetch ? 'Fetching Data...' : ''}
-      </Text>
+      </Text> */}
+      {loadingQueryFetch || loadingPaginationFetch ? (
+        <Text
+          style={{
+            alignSelf: 'center',
+            marginBottom: mvs(5),
+            marginTop: mvs(3),
+          }}>
+          Fetching Data...
+        </Text>
+      ) : null}
       <View style={styles.sortNfilter.outerContainer}>
         {/* <Text>hello</Text> */}
       </View>
