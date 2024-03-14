@@ -7,7 +7,7 @@ const Stack = createStackNavigator();
 
 export default function FavouritesStack() {
   return (
-    <Stack.Navigator initialRouteName="MainBookPage">
+    <Stack.Navigator initialRouteName="FavouritesScreen">
       <Stack.Screen
         name="FavouritesScreen"
         component={FavouritesScreen}

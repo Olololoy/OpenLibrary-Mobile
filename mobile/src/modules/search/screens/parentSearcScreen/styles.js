@@ -18,8 +18,9 @@ const styles = ScaledSheet.create({
   },
   searchWrapperContainer: {
     self: {
+      marginTop: '30@mvs',
       marginHorizontal: '30@ms',
-      marginBottom: '10@mvs', //CHECK: if lines up well
+      marginBottom: '2@mvs', //CHECK: if lines up well
     },
     loadingComponent: {
       //TODO: include loading component
@@ -27,9 +28,9 @@ const styles = ScaledSheet.create({
   },
   sortNfilter: {
     outerContainer: {
-      height: '30@mvs',
+      height: '5@mvs',
       marginHorizontal: '30@ms',
-      borderWidth: '1@ms',
+      // borderWidth: '1@ms',
       alignItems: ' center', //TODO : remove this later
       marginBottom: '10@mvs', // CHECK: if it fits well
     },
@@ -48,12 +49,12 @@ const styles = ScaledSheet.create({
       // height: '250@ms', //can remove this coz height is same as image height
     },
     imageWrapper: {
-      elevation: 6,
+      elevation: 4,
       shadowColor: 'black',
       borderRadius: '20@ms',
       // width: '160@ms', // CHECK: maybe not needed
-      marginRight: '10@ms', //CHECK: if fits well
-      borderWidth: '1@ms',
+      marginRight: '15@ms', //CHECK: if fits well
+      // borderWidth: '1@ms',
     },
     image: {
       //height and width to match the common aspect ratio
@@ -62,8 +63,11 @@ const styles = ScaledSheet.create({
       width: '160@ms',
       height: '200@mvs',
       width: '120@ms',
-      height: '150@mvs',
-      width: '90@ms',
+      height: '220@mvs',
+      width: '132@ms',
+
+      // height: '150@mvs',
+      // width: '90@ms',
       // height: '125@mvs',
       // width: '75@ms',
       borderRadius: '20@ms',
@@ -75,10 +79,13 @@ const styles = ScaledSheet.create({
       self: {
         flex: 1,
         alignItems: 'flex-start',
+        height: '100%',
+        paddingTop: '30@mvs',
+        // justifyItems: 'center',
         // borderWidth: '1@ms',
       },
       titleText: {
-        width: '100%', //CHECK: if it works or explicit width deni padegi ya container me bound karna padega
+        width: '90%', //CHECK: if it works or explicit width deni padegi ya container me bound karna padega
         // width: '160@ms',
         // marginTop: '15@mvs',
         fontSize: '16@ms',

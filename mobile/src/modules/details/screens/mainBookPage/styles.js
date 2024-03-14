@@ -9,19 +9,20 @@ const styles = ScaledSheet.create({
       justifyContent: 'space-between',
       height: '15@ms',
       marginTop: '50@mvs',
-      borderWidth: '1@ms',
+      // borderWidth: '1@ms',
     },
     left_backButton: {
-      width: '20@ms',
-      height: '15@ms',
-      borderWidth: '1@ms',
+      width: '30@ms',
+      height: '30@ms',
+      // borderWidth: '1@ms',
     },
     right_bookmark: {
       // position:'absolute', CHECK: isse work karega ya nahi
-      height: '45@mvs',
-      width: '35@mvs',
-      borderWidth: '1@ms',
-      // top: '22.5@mvs',
+      height: '55@mvs',
+      width: '30@mvs',
+
+      // borderWidth: '1@ms',
+      bottom: '7@mvs',
       // top:  CHECK: positioning values
     },
   },
@@ -32,13 +33,14 @@ const styles = ScaledSheet.create({
       paddingBottom: '40@mvs',
     },
     bookContainer: {
-      elevation: 8,
       marginBottom: '20@mvs',
+      // borderWidth: '100@ms',
       // borderWidth: '1@ms'
+      elevation: 24,
     },
     bookImageStyles: {
-      height: '340@mvs',
-      width: '220@ms',
+      height: '310@mvs',
+      width: '210@ms',
       borderRadius: '20@ms',
     },
     titleText: {
@@ -49,7 +51,7 @@ const styles = ScaledSheet.create({
     },
     authorText: {
       fontSize: '16@ms',
-      fontWeight: '500',
+      fontWeight: '400',
       marginBottom: '5@mvs',
       // borderBottomWidth: '1@ms'
     },
@@ -72,8 +74,9 @@ const styles = ScaledSheet.create({
   },
   scrollViewConainer: {
     flex: 1,
-    borderWidth: '1@ms',
-    paddingTop: '10@mvs', // CHECK: if this works fine
+    paddingTop: '10@mvs',
+    // borderWidth: '1@ms',
+    // paddingTop: '10@mvs', // CHECK: if this works fine
     // paddingBottom:
     // marginBottom: //CHECK: if necessary and how will it work
   },

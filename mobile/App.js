@@ -3,6 +3,7 @@ import React from 'react';
 import {SafeAreaView} from 'react-native';
 import AppScreen from './AppScreen';
 import {NavigationContainer} from '@react-navigation/native';
+import {GrayBookmark, YellowBookmark} from './src/assets/svgs';
 
 function App() {
   //TODO: DM
@@ -19,6 +20,7 @@ function App() {
         <AppScreen />
       </SafeAreaView>
     </NavigationContainer>
+    // <GrayBookmark width="100" height="100" />
   );
 }
 

@@ -1,9 +1,30 @@
 import {View, Text, TextInput, Pressable} from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './styles.js';
+import {SearchIcon} from '../../assets/svgs/index.js';
+import {ms, mvs} from 'react-native-size-matters/extend';
 
 export default function SearchBarComponent(props) {
-  const {isDisabled} = props;
+  const {isDisabled, callback = null} = props;
+  const [text, settext] = useState('');
+
+  let timer = React.useRef();
+
+  const textChangeCallback = React.useCallback(
+    value => {
+      settext(value);
+      if (timer.current) {
+        clearTimeout(timer.current);
+      }
+
+      timer.current = setTimeout(() => {
+        console.log('debounced');
+        callback(value);
+      }, 1500);
+      console.log('hello');
+    },
+    [callback],
+  );
 
   function onPressSearchBy() {}
 
@@ -13,22 +34,18 @@ export default function SearchBarComponent(props) {
 
     <View style={styles.outerContainer.self}>
       <View style={styles.outerContainer.left.self}>
-        <View style={styles.outerContainer.left.icon}></View>
-        {!isDisabled ? (
-          <TextInput
-            // disabled={true}
-            style={styles.outerContainer.left.input}
-            placeholder="Search"
-            placeholderTextColor="#c4c4c4"
-            onPress={null}
-          />
-        ) : (
-          <View style={styles.outerContainer.left.input}>
-            <Text style={styles.outerContainer.left.disabledText}>
-              Searchdsafas
-            </Text>
-          </View>
-        )}
+        <View style={styles.outerContainer.left.icon}>
+          <SearchIcon height={mvs(25)} width={ms(25)} />
+        </View>
+        <TextInput
+          style={styles.outerContainer.left.input}
+          placeholder="Search"
+          placeholderTextColor="#aaa"
+          onPress={null}
+          editable={!isDisabled}
+          value={text}
+          onChangeText={textChangeCallback}
+        />
       </View>
       <View style={styles.outerContainer.right.self}>
         <View style={styles.outerContainer.right.divider}></View>
@@ -40,7 +57,7 @@ export default function SearchBarComponent(props) {
 
                 </View> */}
           <Text style={styles.outerContainer.right.textOuterContainer.text}>
-            Authors
+            {isDisabled ? 'Authors' : 'Title'}
           </Text>
         </Pressable>
       </View>
