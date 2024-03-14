@@ -1,4 +1,8 @@
 export function urlCreator(coverID = '', size = 'medium') {
+  if (!coverID || coverID === '') {
+    // return ''; // or return default
+    coverID = '';
+  }
   let mappedSize;
   switch (size.toLowerCase()) {
     case 'small':
@@ -33,7 +37,7 @@ export function fetchRandomFromArray(array, fetchNumber) {
 }
 
 export function fetchValuesFromItem(item) {
-  let authorName, final_url, author_key, ratings, publishedYear;
+  let authorName, final_url, author_key, ratings, publishedYear, coverID;
   // let authorName =
   // item?.author_name === undefined
   //   ? item?.authors[0]?.name
@@ -63,6 +67,14 @@ export function fetchValuesFromItem(item) {
       ? urlCreator(item?.cover_id, 'medium')
       : urlCreator(item?.cover_i, 'medium');
 
+  if (!item?.cover_i && !item?.cover_id) {
+    coverID = '';
+  } else if (item?.cover_i) {
+    coverID = item?.cover_i;
+  } else {
+    coverID = item?.cover_id;
+  }
+
   let titleName = item?.title;
 
   // let author_key =
@@ -86,7 +98,7 @@ export function fetchValuesFromItem(item) {
   let key = item?.key;
 
   // console.log(author_key);
-  console.log(key);
+  // console.log(key);
 
   return {
     authorName,
@@ -96,5 +108,6 @@ export function fetchValuesFromItem(item) {
     key,
     publishedYear,
     ratings,
+    coverID,
   };
 }

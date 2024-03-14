@@ -14,7 +14,7 @@ import SearchTabUnSelected from './searchTabUnselected.svg';
 import FavouriteTabSelected from './favTabSelected.svg';
 import FavouriteTabUnSelected from './favTabUnSelected.svg';
 import SearchIconEmptyPage from './searchIconEmptyPage.svg';
-// import EmptyFavouriteList
+import BookmarkEmptyPageIcon from './BookmarkIconEmptyPage.svg';
 
 export {
   FrameBookmark,
@@ -33,4 +33,5 @@ export {
   FavouriteTabSelected,
   FavouriteTabUnSelected,
   SearchIconEmptyPage,
+  BookmarkEmptyPageIcon,
 };

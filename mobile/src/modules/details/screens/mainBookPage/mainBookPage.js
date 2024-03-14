@@ -29,10 +29,29 @@ export default function MainBookPage(props) {
     // console.log(params);
   });
 
-  const {authorName, final_url, titleName, author_key, key} =
-    fetchValuesFromItem(params);
+  const {
+    authorName,
+    final_url,
+    titleName,
+    author_key,
+    key,
+    publishedYear,
+    ratings,
+    coverID,
+  } = fetchValuesFromItem(params);
+
+  // ye case check kar sakte hai ki wo key bejni chahiye hai ya anhi aur saare cases handled hai ya nahi
+  const storageItem = {
+    author_key: author_key,
+    title: titleName,
+    ratings_average: ratings,
+    first_publish_year: publishedYear,
+    author_name: [authorName],
+    cover_id: coverID,
+    key: key,
+  };
   // console.log(author_key);
-  console.log(key);
+  // console.log(key);
 
   // console.log(navigation);
   //from navigation props
@@ -110,8 +129,9 @@ a
     storagePromise
       .then(data => {
         if (data) {
+          console.log(data);
           const map = JSON.parse(data);
-          if (map[params?.title]) {
+          if (map[key]) {
             setisBookmarked(true);
             // setisBookmarkedInitial(true);
           }
@@ -168,8 +188,17 @@ a
     return () => backHandler.remove();
   }, []);
 
+  /**a
+   * a
+   * a
+   * a
+   * a
+  a**/
+
   const pressBookmark = React.useCallback(
     function () {
+      console.log('LogCheck', 'Z', bookmarkChangeInitiated);
+
       if (!bookmarkChangeInitiated) {
         setbookmarkChangeInitiated(true);
         const storagePromise = AsyncStorage.getItem('fav_Item_Map');
@@ -178,17 +207,20 @@ a
           .then(data => {
             if (data) {
               const map = JSON.parse(data);
-              // console.log(map);
+              console.log(map);
               if (!isBookmarked) {
-                map[params?.title] = true;
+                map[key] = storageItem;
               } else {
-                delete map[params?.title];
+                delete map[key];
               }
               return AsyncStorage.setItem('fav_Item_Map', JSON.stringify(map));
             } else {
               const object = {};
-              object[params?.title];
-              AsyncStorage.setItem('fav_Item_Map', JSON.stringify(object));
+              object[key] = storageItem;
+              return AsyncStorage.setItem(
+                'fav_Item_Map',
+                JSON.stringify(object),
+              );
             }
           })
           .then(() => {
@@ -199,9 +231,10 @@ a
             console.log('asyncStorageError_BookMainPage', e);
           })
           .finally(() => {
-            if (bookmarkChangeInitiated) {
-              setbookmarkChangeInitiated(false);
-            }
+            // if (bookmarkChangeInitiated) {
+            //callback ki bakchodi
+            setbookmarkChangeInitiated(false);
+            // }
           });
 
         // .then(() => {
@@ -212,6 +245,12 @@ a
     [isBookmarked, bookmarkChangeInitiated],
   );
 
+  /**a
+   * a
+   * a
+   * a
+   * a
+  a**/
   function renderUI() {
     switch (currentTab) {
       case 'overview':

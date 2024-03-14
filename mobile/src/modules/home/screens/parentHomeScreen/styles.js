@@ -4,6 +4,7 @@ import {StyleSheet} from 'react-native';
 const styles = ScaledSheet.create({
   parentScrollView: {
     flex: 1,
+    marginBottom: '50@mvs',
   },
   topBar: {
     self: {
